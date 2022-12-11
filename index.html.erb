@@ -25,47 +25,17 @@
       <!-- Child elements of container with class="list" becomes list items -->
 		<div class='list d-grid gap-3'>
 	      <!-- The innerHTML of children with class="title" becomes this items "title" value -->
-		  
+		  <% @bookmarks.each do |mark| %>
 	   		<div class="card" style="width: 18rem;">
 	   		  <div class="card-header title">
-	   		    Honey Boo
+	   		    <%= mark.title %>
 	   		  </div>
 	   		  <div class="card-body">
-	   		    <p class="card-text content"> Meeting Boo </p>
-	   			<a href="https://www.google.com" class="card-link" target="_blank">https://www.google.com</a>
+	   		    <p class="card-text content"> <%= mark.content %> </p>
+	   			<a href="<%= mark.link %>" class="card-link" target="_blank"><%= mark.link %></a>
 	   		  </div>
 	   		</div>
-		  
-	   		<div class="card" style="width: 18rem;">
-	   		  <div class="card-header title">
-	   		    Puff Daddy
-	   		  </div>
-	   		  <div class="card-body">
-	   		    <p class="card-text content"> Meeting Daddy </p>
-	   			<a href="https://www.bing.com" class="card-link" target="_blank">https://www.bing.com</a>
-	   		  </div>
-	   		</div>
-		  
-	   		<div class="card" style="width: 18rem;">
-	   		  <div class="card-header title">
-	   		    Snoop Dog
-	   		  </div>
-	   		  <div class="card-body">
-	   		    <p class="card-text content"> Meeting Dog </p>
-	   			<a href="https://www.ibm.com" class="card-link" target="_blank">https://www.ibm.com</a>
-	   		  </div>
-	   		</div>
-		  
-	   		<div class="card" style="width: 18rem;">
-	   		  <div class="card-header title">
-	   		    Baby Daddy
-	   		  </div>
-	   		  <div class="card-body">
-	   		    <p class="card-text content"> Meeting Baby </p>
-	   			<a href="https://www.yahoo.com" class="card-link" target="_blank">https://www.yahoo.com</a>
-	   		  </div>
-	   		</div>
-		  
+		  <% end %>
   	    </div>
       </div>    
     </div>
