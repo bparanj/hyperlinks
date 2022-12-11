@@ -17,7 +17,7 @@ CSV.foreach('bookmarks.csv', headers: true) do |row|
 end 
 
 template = File.read('./index.html.erb')
-result = ERB.new(template, nil, '-').result(binding)
+result = ERB.new(template, trim_mode: '-').result(binding)
 
 File.open('index.html', 'w+') do |file|
   file.write(result)
