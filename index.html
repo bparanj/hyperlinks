@@ -8,7 +8,7 @@
     <title>Link Search</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.0.2/list.min.js" integrity="sha512-MT5YyrGWqMGkIbwkVUZEWGrRDjlNx8loukEdFyzLo4s8INKVxnDQy2eFcpmnWGrFwJ+X8mRTQOJpWCayXz7+Og==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
     
   </head>
   <body onLoad="document.search.focus()";>
@@ -22,51 +22,51 @@
 		  	<input name='search' class="search form-control" placeholder="Search" autofocus onkeydown="onkeypressed(event, this);" />
 		  </div>
 
-      <!-- Child elements of container with class="list" becomes list items -->
-		<div class='list d-grid gap-3'>
-	      <!-- The innerHTML of children with class="title" becomes this items "title" value -->
+
+		<table class="table table-striped">		  
+		  <thead>
+		    <tr>
+		      <th scope="col">#</th>
+		      <th scope="col">Title</th>
+		      <th scope="col">Content</th>
+		      <th scope="col">Link</th>
+		    </tr>
+		  </thead>
+		  <!-- Child elements of container with class="list" becomes list items -->
+		  <tbody class='list'>
+			  <!-- The innerHTML of children with class="title" becomes this items "title" value -->
 		  
-	   		<div class="card" style="width: 18rem;">
-	   		  <div class="card-header title">
-	   		    Honey Boo
-	   		  </div>
-	   		  <div class="card-body">
-	   		    <p class="card-text content"> Meeting Boo </p>
-	   			<a href="https://www.google.com" class="btn btn-primary" target="_blank">Open</a>
-	   		  </div>
-	   		</div>
+		    <tr>
+		      <td> 1</th>
+		      <td class='title'>Honey Boo </td>
+		      <td class='content'>Meeting Boo</td>
+		      <td><a href="https://www.google.com" class="btn btn-primary" target="_blank">Open</a></td>
+		    </tr>
 		  
-	   		<div class="card" style="width: 18rem;">
-	   		  <div class="card-header title">
-	   		    Puff Daddy
-	   		  </div>
-	   		  <div class="card-body">
-	   		    <p class="card-text content"> Meeting Daddy </p>
-	   			<a href="https://www.bing.com" class="btn btn-primary" target="_blank">Open</a>
-	   		  </div>
-	   		</div>
+		    <tr>
+		      <td> 2</th>
+		      <td class='title'>Puff Daddy </td>
+		      <td class='content'>Meeting Daddy</td>
+		      <td><a href="https://www.bing.com" class="btn btn-primary" target="_blank">Open</a></td>
+		    </tr>
 		  
-	   		<div class="card" style="width: 18rem;">
-	   		  <div class="card-header title">
-	   		    Snoop Dog
-	   		  </div>
-	   		  <div class="card-body">
-	   		    <p class="card-text content"> Meeting Dog </p>
-	   			<a href="https://www.ibm.com" class="btn btn-primary" target="_blank">Open</a>
-	   		  </div>
-	   		</div>
+		    <tr>
+		      <td> 3</th>
+		      <td class='title'>Snoop Dog </td>
+		      <td class='content'>Meeting Dog</td>
+		      <td><a href="https://www.ibm.com" class="btn btn-primary" target="_blank">Open</a></td>
+		    </tr>
 		  
-	   		<div class="card" style="width: 18rem;">
-	   		  <div class="card-header title">
-	   		    Baby Daddy
-	   		  </div>
-	   		  <div class="card-body">
-	   		    <p class="card-text content"> Meeting Baby </p>
-	   			<a href="https://www.yahoo.com" class="btn btn-primary" target="_blank">Open</a>
-	   		  </div>
-	   		</div>
+		    <tr>
+		      <td> 4</th>
+		      <td class='title'>Baby Daddy </td>
+		      <td class='content'>Meeting Baby</td>
+		      <td><a href="https://www.yahoo.com" class="btn btn-primary" target="_blank">Open</a></td>
+		    </tr>
 		  
-  	    </div>
+		  </tbody>
+		</table>
+		  		  
       </div>    
     </div>
 
