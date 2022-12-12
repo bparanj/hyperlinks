@@ -22,3 +22,5 @@ result = ERB.new(template, trim_mode: '-').result(binding)
 File.open('index.html', 'w+') do |file|
   file.write(result)
 end
+
+p 'Generated index.html'
