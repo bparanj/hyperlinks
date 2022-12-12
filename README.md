@@ -19,8 +19,8 @@ The index.html.erb is the template used to generate the static file. The data is
 # Dependencies
 
 - Bootstrap 5.2
-- List.js 1.0.2
-- Ruby 3.0
+- List.js 2.3.1
+- Ruby 3.0 or above
 
 # License
 
