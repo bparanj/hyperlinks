@@ -12,9 +12,9 @@ The index.html.erb is the template used to generate the static file. The data is
 
 # Screenshots
 
-![alt text](/images/home.png?raw=true "Search Page")
+![alt text](/images/table.png?raw=true "Search Page")
 
-![alt text](/images/result.png?raw=true "Search Result")
+![alt text](/images/search.png?raw=true "Search Result")
 
 # Dependencies
 
